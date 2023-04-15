@@ -11,6 +11,22 @@ ExecStart=__INSTALL_DIR__/script
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 
+
+[Unit]
+Description=autobrr
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+User=__APP__
+Group=__APP__
+WorkingDirectory=__INSTALL_DIR__/
+ExecStart=__INSTALL_DIR__/autobrr --config=__DATA_DIR__/.config/autobrr/
+
+[Install]
+WantedBy=multi-user.target
+
+
 # Sandboxing options to harden security
 # Depending on specificities of your service/app, you may need to tweak these
 # .. but this should be a good baseline
