@@ -62,3 +62,12 @@ sessionSecret = "__KEY__"
 # Custom definitions
 #
 #customDefinitions = "/home/$YOUR_USER/.config/autobrr/definitions"
+
+# Database config
+#
+databaseType = "postgres"
+postgresHost = "localhost"
+postgresPort = 5432
+postgresDatabase = "__DB_NAME__"
+postgresUser = "__DB_USER__"
+postgresPass = "__DB_PWD__"
