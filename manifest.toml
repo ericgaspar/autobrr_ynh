@@ -50,6 +50,8 @@ ram.runtime = "50M"
         arm64.sha256 = "3699622ee0c5d07fd36f24aa52cca9122d81637f803521fe2483844f45ff2d1a"
         armhf.url = "https://github.com/autobrr/autobrr/releases/download/v1.23.0/autobrr_1.23.0_linux_armv6.tar.gz"
         armhf.sha256 = "841f760c0cd8b1ff91714536dd5489d6e706afcb59b215509616ed98478af43a"
+        in_subdir = false
+        extract = true
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
