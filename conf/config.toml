@@ -18,7 +18,7 @@ port = __PORT__
 #
 # Optional
 #
-#baseUrl = "/autobrr/"
+baseUrl = "__PATH__/"
 
 # autobrr logs file
 # If not defined, logs to stdout
