@@ -21,6 +21,7 @@ ynh_setup_source --dest_dir="$install_dir"
 mkdir -p $data_dir/.config/autobrr
 
 chown -R $app:www-data "$install_dir"
+chmod +x "$install_dir/autobrr"
 
 #=================================================
 # SYSTEM CONFIGURATION
@@ -33,7 +34,7 @@ ynh_add_nginx_config
 # Create a dedicated systemd config
 ynh_add_systemd_config
 
-yunohost service add $app --description="A short description of the app" --log="/var/log/$app/$app.log"
+yunohost service add $app --description="Automation for torrents and usenet" --log="/var/log/$app/$app.log"
 
 #=================================================
 # APP INITIAL CONFIGURATION
